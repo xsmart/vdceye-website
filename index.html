@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="de"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="de"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9" lang="de"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang="de"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>VDC - ONVIF support</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<!-- Website-Template-Starting-Point by Michael van Laar
+	     https://github.com/MichaelvanLaar/Website-Template-Starting-Point -->
+
+	<!-- TO DO: Remove the following meta elements if you don’t use a responsive design and
+	     want your website to be displayed using the default zoom function of mobile browsers. -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
+
+	<link rel="icon" href="favicon.ico" sizes="16x16 24x24 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon-152.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon-120.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-72.png">
+	<link rel="apple-touch-icon-precomposed" href="favicon-57.png">
+	<link rel="icon" href="favicon-228.png" sizes="228x228">
+	<link rel="icon" href="favicon-195.png" sizes="195x195">
+	<link rel="icon" href="favicon-128.png" sizes="128x128">
+	<link rel="icon" href="favicon-96.png" sizes="96x96">
+	<link rel="icon" href="favicon-32.png" sizes="32x32">
+	<meta name="msapplication-TileColor" content="#001e50">
+	<meta name="msapplication-TileImage" content="favicon-144.png">
+
+	<link rel="stylesheet" href="styles/normalize.min.css" />
+	<link rel="stylesheet" href="styles/style.css" />
+
+	<script src="js/libs/modernizr-2.6.2.custom.min.js"></script>
+	<script>Modernizr.load({ test: Modernizr.mq('(min-width: 0px)'), nope: 'js/libs/respond.custom.min.js' });</script>
+	<!-- If you don’t use webfonts, executing the fontsmooting test is not nevessary.
+	     In this case you don’t have to load modernizr-fontsmoothing-test.min.js. -->
+	<script src="js/libs/modernizr-fontsmoothing-test.min.js"></script>
+
+	<!-- Facebook Open Graph Data -->
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:type" content="article" />
+	<meta property="og:locale" content="de_DE" />
+	
+	<!-- ATTENTION: Use the canonical link only if you really (really, really!) know what you do.
+	     If you don’t know what a canonical link is, you must remove the following link element. -->
+	<link rel="canonical" href="" />
+
+	<!-- TO DO: Remove the following link element if your website doesn’t offer RSS feeds. -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="" />
+	
+</head>
+
+<body>
+
+	<!--[if lte IE 7]>
+		<div class="warning-shader"></div>
+		<iframe src="ie-warnings/old-ie-warning.html" class="ie-warning" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+	<![endif]-->
+
+	<!--[if IE 8 ]>
+		<noscript>
+			<div class="warning-shader"></div>
+			<iframe src="ie-warnings/ie-js-warning.html" class="ie-warning" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+		</noscript>
+	<![endif]-->
+
+	<ul id="skiplinks">
+		<li><a href="#main-navigation"></a></li>
+		<li><a href="#main"></a></li>
+	</ul> <!-- end of #skiplinks -->
+
+	<div id="page-header-container" class="clearfix" >
+		<div class="wrapper">
+			<header id="page-header" role="banner" class="clearfix">
+				&nbsp &nbsp<img src="images/logo.jpg" width="180" height="60" />
+				<nav id="main-navigation" class="clearfix">
+					<ul id="main-navigation-list">
+						<li class="parent has_children">
+							<a href="http://www.vdceye.com/">Projects</a>
+							<ul>
+								<li>
+									<a href="#11">ONVIF Simulator </a>
+								</li>
+								<li class="has_children">
+									<a href="#12">ONVIF Web plugin</a>
+								</li>
+								<li class="parent has_children">
+									<a href="#13">VDC</a>
+								</li>
+							</ul>
+						</li>
+						<li class="has_children">
+							<a href="#2">Video Surveillance</a>
+						</li>
+						<li class="has_children">
+							<a href="#3">Solutions & Stories</a>
+						</li>
+						<li class="has_children">
+							<a href="#4">Service and Support</a>
+							<ul>
+								<li class="has_children">
+									<a href="#31">Service and Support</a>
+									<ul>
+										<li><a href="#311">Contact Us</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul> <!-- end of #main-navigation-list -->
+				</nav> <!-- end of #main-navigation -->
+			</header> <!-- end of #page-header -->
+		</div> <!-- end of .wrapper -->
+	</div> <!-- end of #page-header-container -->
+
+	<div id="main-container" class="clearfix">
+		<div class="wrapper">
+			<div id="main" role="main" class="clearfix">
+			
+				<h3> Projects: </h3>
+				<p>1. ONVIF ProfileS & ProfileG simulator
+				<br><a href="https://github.com/xsmart/ONVIFSim">https://github.com/xsmart/ONVIFSim</a>
+				<br>  ONVIF simulator IP Camera
+				<br>  Consulting Services
+				<br> <a href="mailto:xsmart@163.com">xsmart@163.com</a></p>
+				<p>2. ONVIF Web plugin(Activex & NPAPI)
+				<br> <a href="mailto:xsmart@163.com">xsmart@163.com</a></p>
+				<p>3. Video Data Center
+				<br><a href="https://github.com/xsmart/vdc">https://github.com/xsmart/vdc</a>
+				<br><h5>>> VDC-NVR 1.0.0 Released</h5> <a href="http://sourceforge.net/projects/vscloud/files/Release/VDC-NVR-V1.0.0.msi/download">Download</a> 2013.10.16
+				<br>				
+				<br>open source Video Surveillance platform
+				<br>open source Network Video Recorder NVR
+
+				<br>License:
+				<br>BSD license
+
+				<br><a href="mailto:xsmart@163.com">xsmart@163.com</a>
+
+				For more guide 
+				<a href="http://blog.csdn.net/video_dc" class="gwd-a-lpat">http://blog.csdn.net/video_dc</a></p>
+			<img src="images/trackhead.jpg" width="500" height="400" />
+			</div> <!-- end of #main -->
+	    
+			<aside id="sidebar" class="clearfix">
+				<h3> Related links </h3>
+				<p>If you are interested in building 
+				your own application using VDC, mailto:
+				<br><a href="mailto:xsmart@163.com">xsmart@163.com</a>
+				<br>QQ:2104915834
+				</p>
+				<img src="images/github.jpg" width="40" height="40" />
+				<a href="https://github.com/xsmart/">https://github.com/xsmart/</a>
+				</p>
+			</aside> <!-- end of #sidebar -->
+		</div> <!-- end of .wrapper -->
+	</div> <!-- end of #main-container -->
+	
+	<div id="page-footer-container" class="clearfix">
+		<div class="wrapper">
+			<footer id="page-footer" class="clearfix">
+				<p>Copyright © 2014-2015, by <A HREF="http://wwww.vdceye.com">VDCEYE</A> 
+				<a href="mailto:xsmart@163.com">xsmart@163.com</a> 
+				FOLLOW US:<A HREF="https://github.com/xsmart/">https://github.com/xsmart/</A></p>
+			</footer> <!-- end of #page-footer -->
+		</div> <!-- end of .wrapper -->
+	</div> <!-- end of #page-footer-container -->
+
+
+
+	<!-- JavaScript at the bottom for fast page loading -->
+
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>  -->
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.3.min.js"><\/script>')</script>
+
+	<script>
+		Modernizr.load([
+			{
+				test: window.matchMedia,
+				nope: 'js/libs/matchMedia.min.js'
+			},
+			'js/plugins.js',
+			'js/script.js'
+		]);
+	</script>
+
+	<!-- TO DO: Change UA-XXXXX-X to be your site’s ID 
+	     If you don’t use Google Analytics, you can remove the following script. -->
+	<script>
+		window._gaq = [['_setAccount','UAXXXXXXXX1'],['_gat._anonymizeIp'],['_trackPageview'],['_trackPageLoadTime']];
+		Modernizr.load({
+			load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+		});
+	</script>
+
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<script src="js/libs/selectivizr.min.js"></script>
+	<![endif]-->
+
+</body>
+</html>
